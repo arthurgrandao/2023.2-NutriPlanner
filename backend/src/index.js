@@ -20,5 +20,10 @@ app.listen(port, () => {
 
 require("./db/connection.js");
 
+app.use('/', (req, res) => {
+    res.send("server is running");
+});
+
+
 app.use('/pacientes', pacienteRoutes);
 app.use('/treinos', treinoRoutes);
