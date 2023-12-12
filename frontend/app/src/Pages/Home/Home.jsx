@@ -27,7 +27,7 @@ import consultas from '../../assets/icons/Consultas.svg';
 import bolo from '../../assets/icons/Bolo de Aniversário.svg';
 
 function buscaQuantidadePacientes(){
-    const url = 'http://localhost:3000/pacientes/buscaQuantidades';
+    const url = 'https://teste-deploy-nutriplanner2.vercel.app/pacientes/buscaQuantidades';
 
     
     axios.get(url)
@@ -51,7 +51,7 @@ function buscaQuantidadePacientes(){
 };
 
 function buscaAniversariantes(){
-    const url = 'http://localhost:3000/pacientes/buscaAniversarios';
+    const url = 'https://teste-deploy-nutriplanner2.vercel.app/pacientes/buscaAniversarios';
 
     axios.get(url)
     .then((response) => {

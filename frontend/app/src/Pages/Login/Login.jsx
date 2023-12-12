@@ -17,7 +17,7 @@ function Login() {
         console.log(pin);
 
         try{
-            const response = await axios.post('http://localhost:3000/login', 
+            const response = await axios.post('https://teste-deploy-nutriplanner2.vercel.app/login', 
                 JSON.stringify({pin}),
                 {
                     headers:{ 'Content-Type': 'application/json'}

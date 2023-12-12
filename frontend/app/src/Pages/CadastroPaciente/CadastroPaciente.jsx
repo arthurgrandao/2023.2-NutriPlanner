@@ -213,7 +213,7 @@ const CadastroPaciente = () =>{
     function cadastrarPaciente(event){
         event.preventDefault();
 
-        const url = 'http://localhost:3000/pacientes';
+        const url = 'https://teste-deploy-nutriplanner2.vercel.app/pacientes';
 
         axios.post(url, dadosPaciente)
         .then((response) => {
